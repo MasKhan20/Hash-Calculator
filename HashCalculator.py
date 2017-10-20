@@ -1,5 +1,9 @@
-import argparse, clipboard, hashlib
+import hashlib
 from passlib.hash import lmhash
+try: import argparse
+except ImportError: pass
+try: import clipboard
+except ImportError: pass 
 
 
 def calculateLM(text):
